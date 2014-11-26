@@ -7,13 +7,10 @@ A collection of useful functions to make mobile prototyping with [Framer](http:/
 ### Framer Studio
 * Save your project and open the project folder
 * Download [library.js](https://rawgit.com/facebook/shortcuts-for-framer/master/build/library.js) into the `framer` folder inside your project folder
-* Include at the top of your code:
-```
-Utils.domLoadScriptSync("framer/library.js")
-```
-
-### Traditional
-Include [library.js](https://rawgit.com/facebook/shortcuts-for-framer/master/build/library.js) right before `app.js` in your Framer `index.html` file. 
+* Open `index.html` in your project folder and right after the line `<script src="framer/init.js"></script>`, add the following line:
+ 
+```<script src="framer/library.js"></script>```
+ 
 
 ## General
 * After importing your PSD/Sketch layers, call initialize to create global Javascript variables for every layer for quick access:
